@@ -20,20 +20,22 @@ const c = ()=>{
 
 const result = ()=>{
     if(input.value){
-
-   
     currentValue = input.value
     resultValue = eval(currentValue)
-    input.value = (Math.round(resultValue*100000)/100000).toFixed(4)
+    if (!Number.isInteger(resultValue)){
+        return input.value=(Math.round(resultValue*100000)/100000).toFixed(4);}}
+        input.value = resultValue
     reset= true;
     } 
-}
+
 
 const negative = ()=>{
     if(input.value){
     currentValue = input.value;
     resultValue = currentValue * -1
-    input.value=(Math.round(resultValue*100000)/100000).toFixed(4);}
+    if (!Number.isInteger(resultValue)){
+        return input.value=(Math.round(resultValue*100000)/100000).toFixed(4);}}
+    input.value = resultValue
 }
 
 const percentage = ()=>{
