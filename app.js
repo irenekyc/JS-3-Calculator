@@ -23,10 +23,10 @@ const result = ()=>{
     currentValue = input.value
     resultValue = eval(currentValue)
     if (!Number.isInteger(resultValue)){
-        return input.value=(Math.round(resultValue*100000)/100000).toFixed(4);}}
-        input.value = resultValue
+        resultValue=(Math.round(resultValue*10000000000)/10000000000).toFixed(4);}
+    input.value = resultValue
     reset= true;
-    } 
+    } }
 
 
 const negative = ()=>{
