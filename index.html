@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS-3-Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="calculator-solid.svg">
+   
+</head>
+<body>
+    
+    <div class="calculator-container">
+        <div class="input-value">
+            <input type="text" class="number-input" id="input" >
+        </div>
+        <div class="number-pad">
+            <button class="number-pad-function" id="clear" onclick="c()">AC</button>
+            <button class="number-pad-function" id="negative" onclick="negative()">+/-</button>
+            <button class="number-pad-function" id="percentage" onclick="percentage()">%</button>
+            <button class="number-pad-number" id="divide" onclick="insert('/')">&#247;</button>
+
+            <button class="number-pad-number" id="seven" onclick="insert(7)">7</button>
+            <button class="number-pad-number" id="eigth" onclick="insert(8)">8</button>
+            <button class="number-pad-number" id="nine" onclick="insert(9)">9</button>
+            <button class="number-pad-number" id="multipy" onclick="insert('*')">x</button>
+
+            <button class="number-pad-number" id="four" onclick="insert(4)">4</button>
+            <button class="number-pad-number" id="five" onclick="insert(5)">5</button>
+            <button class="number-pad-number" id="six" onclick="insert(6)">6</button>
+            <button class="number-pad-number" id="minus" onclick="insert('-')">-</button>
+
+            <button class="number-pad-number" id="one" onclick="insert(1)">1</button>
+            <button class="number-pad-number" id="two" onclick="insert(2)">2</button>
+            <button class="number-pad-number" id="three" onclick="insert(3)">3</button>
+            <button class="number-pad-number" id="plus" onclick="insert('+')">+</button>
+
+            <button class="number-pad-number" id="zero" onclick="insert(0)">0</button>
+            <button class="number-pad-number" id="dot" onclick="insert('.')">.</button>
+            <button class="number-pad-function equal-sign" id="equal" onclick="result()">=</button>
+        </div>
+
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
